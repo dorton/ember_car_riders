@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Dees All Dem Parents and Shit.</h2>
+<ul>
+  {{#each parent in model}}
+    <li>
+      {{#link-to 'parent' parent}}
+        {{parent.lastName}},
+        {{parent.firstName}}
+      {{/link-to}}
+    </li>
+  {{else}}
+    <li>No parents found.</li>
+  {{/each}}
+</ul>
+</div>
