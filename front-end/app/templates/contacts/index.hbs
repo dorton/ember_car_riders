@@ -1,12 +1,16 @@
-<ul>
+<div class="container">
+<ol>
   {{#each contact in model}}
-    <li>
-      {{#link-to 'contact' contact}}
-        {{contact.lastName}},
-        {{contact.firstName}}
-      {{/link-to}}
-    </li>
+
+      <li>
+        {{#link-to 'contact' contact}}
+          {{contact.lastName}},
+          {{contact.firstName}}
+        {{/link-to}}
+      </li>
+
   {{else}}
     <li>No contacts found.</li>
   {{/each}}
-</ul>
+</ol>
+</div>

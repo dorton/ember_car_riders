@@ -9,6 +9,7 @@ export default Router.map(function() {
   this.resource('contacts', function() {
     this.resource('contact', { path: '/:contact_id' });
   });
-  this.route('contacts', function() {});
-  this.route('contact');
+  this.resource('parents', function() {
+    this.resource('parent', { path: '/:parent_id' });
+});
 });

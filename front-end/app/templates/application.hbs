@@ -1,10 +1,13 @@
-<h2>Biznz</h2>
+<div class='navbar navbar-default'>
+  <div class='container'>
+    {{#link-to 'index' class ='navbar-brand'}}Biznz{{/link-to}}
+    <ul class='nav navbar-nav navbar-right'>
+      <li>{{#link-to 'index'}}Homepage{{/link-to}}</li>
+      <li>{{#link-to 'contacts'}}Contacts{{/link-to}}</li>
+      <li>{{#link-to 'parents'}}Parents{{/link-to}}</li>
+    </ul>
+  </div>
+</div>
 
-<ul>
-  <li>{{link-to 'Home' 'index'}}</li>
-  <li>{{link-to 'Contacts' 'contacts'}}</li>
-</ul>
-
-<hr>
 
 {{outlet}}
